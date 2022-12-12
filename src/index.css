@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-container {
+  height: 70px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #000000;
+  font-size: 50px;
+}
+
+.navbar-row a {
+  margin: 0 20px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.active {
+  border-bottom: 3px solid #000000;
+}
+
+.login-container,
+.home-container {
+  display: flex;
+  min-height: calc(100vh - 70px);
+  justify-content: center;
+  align-items: center;
+}
+
+.home-col h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.home-col p {
+  width: 500px;
+  display: block;
+  margin: 0 auto 20px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.home-col a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.home-col button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 25px;
+  cursor: pointer;
+  box-shadow: 0 0 3px #000000;
+  transition: 0.5s all;
+  font-size: 20px;
+}
+
+.home-col button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.login-col h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-col form {
+  width: 400px;
+  box-shadow: 0 0 10px rgb(226, 226, 226);
+  padding: 20px 10px;
+  border-radius: 5px;
+
+}
+
+.form-groups {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.form-groups input {
+  height: 40px;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000000;
+}
+
+.form-groups.button {
+  margin: 50px 0;
+}
+
+.form-groups button {
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 25px;
+  cursor: pointer;
+  box-shadow: 0 0 3px #000000;
+  transition: 0.5s all;
+  font-size: 20px;
+}
+
+.form-groups button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.form-groups p {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+}
+
+.form-groups p a {
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.form-groups p a:hover {
+  text-decoration: underline;
+}
+
+.image {
+  text-align: center;
+}
+
+.image img {
+  width: 120px;
+  height: auto;
+}
+
+label svg {
+  transition: all 0.5s;
+  filter: drop-shadow(0 0 1px #000000);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+label svg:hover {
+  color: #ffffff;
+}
+
+.chat-container {
+  padding: 10px 25px;
+}
+
+.chat-row {
+  display: flex;
+}
+
+.chat-col:first-child {
+  flex: 1;
+}
+
+.chat-col:last-child {
+  flex: 2;
+}
+
+.rooms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+}
+
+.message-form {
+  display: flex;
+  margin: 10px 0;
+}
+
+.input-message {
+  height: 40px;
+  width: calc(100% - 80px);
+  border: 1px solid #000000;
+  outline: none;
+  padding: 0 15px;
+  letter-spacing: 1.3px;
+}
+
+.message-form button {
+  width: 80px;
+  height: 40px;
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0 0 2px #000000;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.message-form button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.message-all {
+  height: calc(100vh - 150px);
+  box-shadow: 0 0 10px #bebebe;
+  overflow-y: auto;
+}
+
+.logout {
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0 10px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-size: 20px;
+  font-family: myFont;
+}
+
+.logout:hover {
+  border-bottom: 3px solid #000000;
+}
+
+.navbar-row.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box img {
+  width: 42px;
+  height: auto;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.please-login {
+  text-align: center;
+}
+
+.margin {
+  margin: 40px 0;
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+}
+
+
+.activeRoom {
+  background-color: #ff0000 !important;
+}
+
+.activeRoom:hover {
+  background-color: #ffffff !important;
+}
+
+.rooms span.badge {
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  font-size: 30px;
+  color: #000000;
+  text-shadow: 0 0 2px #ffffff;
+}
+
+.rooms button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 2px #000000;
+  transition: all 0.5s;
+  border: none;
+}
+
+.rooms button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.rooms button:disabled {
+  background-color: #bebebe !important;
+  cursor: not-allowed;
+}
+
+.rooms button:disabled:hover {
+  color: #ffffff !important;
+}
+
+.membersImage {
+  width: 25px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.icon {
+  margin-left: 5px;
+}
+
+.badgeNumber {
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  font-size: 30px;
+  color: #000000;
+  text-shadow: 0 0 2px #ffffff;
+}
+
+.dateMessage {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.messageView {
+  display: block;
+  margin: 15px 0 15px auto;
+  padding: 10px 15px;
+  box-shadow: 0 0 5px #e2e2e2;
+  width: max-content;
+}
+
+.incomingMessage {
+  padding: 10px 15px;
+  box-shadow: 0 0 5px #e2e2e2;
+  width: max-content;
+}
+
+.userImage {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.message-from {
+  display: flex;
+  align-items: center;
+}
+
+.userName {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.messageContent {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.message-all {
+  padding: 15px;
+}
+
+.messageTime {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.currentRoom {
+  display: block;
+  margin: 0 auto 40px auto;
+  width: max-content;
+}
+
+.concersationWith {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.concersationWith img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 10px;
+}
